@@ -1,0 +1,682 @@
+@font-face{
+    font-family: "Raleway"; 
+    src: url("../fonts/Raleway-Medium.ttf") format("true type");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.ttf") format("true type");
+    font-style: normal;
+    font-weight: normal; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+:root{
+    --white: #fff;
+}
+*{
+    box-sizing: border-box;
+}
+.navbar-dark{
+    padding-top: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.right, .left{
+    display: flex;
+    padding-top: 30px;
+}
+.navbar-brand{
+    color : #E4E4E4;
+    margin-left: 180px;
+    font-weight: bold;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+}
+.left > .navbar-toggler{
+    margin-left: 50px;
+    border: unset;
+    position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  padding-top: 0;
+  padding-bottom: 25px;
+} 
+.navbar-toggler:hover, .navbar-toggler:focus{
+    outline: unset;
+}
+  .navbar-toggler-icon {
+    width: 34px;
+    height: 2px;
+    background: #e4e4e4;
+    transition: all .5s ease-in-out;
+  }
+.navbar-toggler-icon::before, .navbar-toggler-icon::after {
+    content: '';
+  position: absolute;
+  width: 34px;
+  height: 2px;
+  background: #e4e4e4;
+  transition: all .5s ease-in-out;
+}
+.navbar-toggler-icon::before{
+    transform: translateY(-7px);
+    right: 4px;
+}
+.navbar-toggler-icon::after{
+    transform: translateY(7px);
+    right: 14px;
+    width: 24px;
+}
+.input-group {
+    background-color: transparent;
+    border: unset;
+    border-bottom: 1px solid #E4E4E4;
+    width: 240px;
+}
+.input-group > input{
+    background-color: transparent;
+    border: unset;
+    color: #fff;
+    width: 220px;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "Raleway", sans-serif;
+}
+.input-group > input:focus, .input-group > textarea:focus, .input-group > select:focus{
+    outline: none;
+}
+.input-group > ::placeholder{
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: #707070;
+}
+.input-group > .input-group-append > img{
+    width: 20px;
+    height: 20px;
+}
+.right > a > .sign:focus{
+    outline: unset;
+}
+.input-group-append{
+    cursor: pointer;
+}
+.right > a > .sign{
+    border: 1px solid #E4E4E4;
+    background-color: transparent;
+    width: 120px;
+    height: 30px;
+    pad: 5px 30px;
+    color: #C4C4C4;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.film > a > img, .list > a > img{
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+.film > a, .list > a {
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff!important;
+    line-height: 21px;
+}
+.active1 > .col-7 > .main-1{
+    font-size: 110px;
+    font-weight: 800;
+    line-height: 125px;
+    -webkit-text-fill-color: transparent;
+     -webkit-text-stroke: 2px var(--white);
+    margin-bottom: 24px;
+}
+.rise {
+    margin-top: 170px!important;
+}
+.col-7 > .main-1-1{
+    font-family: "Raleway", sans-serif;
+    color: #E4E4E4;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 82px;
+}
+.kamikak > .main-1{
+    font-size: 96px!important;
+    line-height: 113px;
+}
+.kamikak{
+    margin-top: 185px!important;
+}
+.kamikak > .main-1-1{
+    color: #E4E4E4;
+    height: 50px;
+    margin-bottom: 0!important;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 61px;
+}
+.active1{
+    display: flex!important;
+}
+.col-7{
+    margin-top: 245px;
+    margin-left: 21%;
+}
+.col-7 > a> .watch:focus, .col-7 > a >.get:focus{
+    outline: unset;
+}
+.col-7 > a > .watch{
+    background: #E4E4E4;
+    border: 2px solid #E4E4E4;
+    width: 190px;
+    height: 50px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    color: #333333;
+    border-radius: unset;
+    margin-right: 25px;
+}
+.col-7 > a > .get{
+    width: 190px;
+    height: 50px;
+    border: 2px solid #E4E4E4;
+    width: 190px;
+    height: 50px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    color: #E4E4E4;
+    border-radius: unset;
+    background-color: transparent;
+}
+.active1 > .col-2{
+    text-align: right;
+    margin-top: 150px;
+    padding: 0 0 0 20px;
+    margin-right: 50px;
+}
+.parasite{
+    margin-top: 235px!important;
+}
+.col-2 > .trailers{
+    text-align: left!important;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 27px;
+    margin-left: 10px;
+    color: #C4C4C4;
+    margin-bottom: 20px;
+}
+.trailer1{
+    position: relative;
+}
+.trailer1 > .trail1{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 31%;
+    right: 39%;
+    cursor: pointer;
+}
+.trailer2{
+    position: relative;
+}
+.trailer2 > .trail2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 31%;
+    right: 39%;
+    cursor: pointer;
+}
+.trailer3{
+    position: relative;
+}
+.trailer3 > .trail3{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 31%;
+    right: 39%;
+    cursor: pointer;
+}
+.carousel-item{
+    position: relative;
+}
+.line1{
+    border: 1px solid #E4E4E4;
+    transform: rotate(90deg);
+    width: 320px;
+    height: 0px;
+    position: absolute;
+    top: 25%;
+    left: 1.8%;
+}
+.line2-1{
+    border: 1.5px solid #fff;
+    background-color: #fff;
+    width: 10px;
+    height: 0px;
+    position: absolute;
+    top:46.6%;
+    margin-left: 180px;
+}
+.line2-2{
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 10px;
+    height: 0px;
+    position: absolute;
+    top: 49%;
+    margin-left: 180px;
+}
+.line2-3{
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 10px;
+    height: 0px;
+    position: absolute;
+    top: 51.5%;
+    margin-left: 180px;
+}
+.line2-4{
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 10px;
+    height: 0px;
+    position: absolute;
+    top: 54%;
+    margin-left: 180px;
+}
+.line3{
+    border: 1px solid #E4E4E4;
+    transform: rotate(90deg);
+    width: 320px;
+    height: 0px;
+    position: absolute;
+    top: 76.5%;
+    left: 1.8%;
+}
+.active2{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.active2 > .down{
+    position: relative;
+}
+.down > .img1{
+    position: absolute;
+    top: 0%;
+    left: 45%;
+}
+.down > .img2{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+.media > a > img{
+    margin: 0 10px;
+}
+.sm-info{
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E4E4E4;
+    margin-right: 50px;
+}
+.info{
+    display: flex;
+    justify-content: flex-end;
+}
+.movie > .carousel-inner >.carousel-item > .row{
+    margin: 35px 0 0 0;
+    justify-content: space-evenly;
+    display: flex;
+}
+.section_2, .section_3, .section_4, .section_5{
+    background-color: #000;
+    padding-top: 60px;
+}
+.section_2 > h2, .section_3 > h2, .section_4 > h2, .section_5 > h2{
+    font-family: "Raleway", sans-serif;
+    font-style: normal; 
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.movie > .carousel-inner >.carousel-item > .row > .col-3 > img{
+    width: 100%;
+    cursor: pointer;
+}
+.movie > .carousel-inner >.carousel-item > .row > .col-3 > .title{
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E4E4E4;
+    text-transform: uppercase;
+    margin-top: 18px;
+    cursor: pointer;
+}
+.movie > .carousel-inner >.carousel-item > .row > .col-3 > .duration{
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #992B2B;
+    margin-bottom: 20px;
+}
+.movie > .carousel-inner >.carousel-item > .row > .col-3{
+    position: relative;
+}
+.movie{
+    padding: 0 35px 0 35px;
+}
+.movie > .carousel-inner >.carousel-item > .row > .col-3 > .play > .player{
+    width: 55px;
+    height: 55px;
+    color: #c4c4c4;
+    position: absolute;
+    top: 33%;
+    right: 41%;
+    opacity: 0;
+    cursor: pointer;
+}
+.movie > .carousel-inner >.carousel-item > .row > .col-3 > .play > .player:hover{
+    opacity: 1;
+    transition: all 0.3s;
+}
+.carousel-control-prev {
+    left: -6%;
+  }
+  .carousel-control-next {
+    right: 1%;
+    width: 20px;
+  }
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 15px;
+    height: 30px;
+    color: #fff;
+}
+.carousel-item > .row > .col-3 > img:hover{
+    opacity: 0.6;
+}
+.section_5 > h2{
+    margin-bottom: 30px;
+}
+.section_5 > .row{
+    margin: 0 60px 0 40px;
+    justify-content: space-between;
+}
+.row > .col-2 > label{
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7B7B7B;
+    margin-bottom: 15px;
+}
+.row > .col-2 > select{
+    background-color: transparent;
+    width: 173px;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    border: unset;
+    border-bottom: 1px solid #E4E4E4;
+    margin-bottom: 15px;
+}
+.row > .col-2 > select:active, .row > .col-2 > select:focus{
+    outline: none;
+    background-color: transparent;
+}
+.row > .col-2 > select > option{
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    border: unset;
+    border-bottom: 1px solid #E4E4E4;
+}
+select option{
+    background-color: #000;
+    border: unset;
+}
+option:hover{
+    color: #000; 
+    box-shadow: inset 20px 20px #000;
+}
+.section_5 >.movie > .carousel-inner > .carousel-item > .row > .col-3 > .duration{
+    margin-bottom: 80px;
+}
+footer{
+    padding: 50px 0 30px 0;
+    background: #111111;
+}
+footer > .line4{
+    display: flex;
+    justify-content: center;
+}
+footer > .line4 > .line-4{
+    border: 1px solid #E4E4E4;
+    width: 129px;
+    height: 0px;
+}
+footer > ul{
+    display: flex;
+    justify-content: center;
+}
+footer > .f-content {
+    padding: 0;
+}
+footer > .f-content > li > a{
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+footer > .f-content > li {
+    list-style: none;
+    margin-top: 25px;
+    margin-right: 3%;
+}
+footer > .s-media > li {
+    list-style: none;
+    margin-right: 1.7%;
+}
+footer > .s-media {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+/* .range1{
+    display: grid;
+    text-align: center;
+    place-items: center;
+  }
+  .range1 >.range{
+    width: 170px;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+  } */
+  /* .range1 >.range > .sliderValue{
+    position: relative;
+    width: 100%;
+  }
+  .range1 >.range > .sliderValue > span{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    transform: translateX(-70%) scale(0);
+    font-weight: 500;
+    top: -10px;
+    line-height: 35px;
+    z-index: 2;
+    color: #fff;
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+  } */
+
+  .range1{
+    display: grid;
+    height: 100%;
+    text-align: center;
+    place-items: center;
+  }
+  .range{
+    width: 170px;
+    height: 50px;
+    background: #000;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+  }
+  .sliderValue{
+    position: relative;
+    width: 100%;
+  }
+  .sliderValue span{
+    position: absolute;
+    height: 22px;
+    width: 18px;
+    transform: translateX(-70%) scale(0);
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 11px;
+    top: -15px;
+    line-height: 35px;
+    z-index: 2;
+    color: #fff;
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+  }
+  .sliderValue span.show{
+    transform: translateX(-70%) scale(1);
+  }
+  .sliderValue span:after{
+    position: absolute;
+    top: 20%;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #9E2F2F;
+    z-index: -1;
+    left: 25%;
+    transform: translateX(-30%) rotate(45deg);
+    border-bottom-left-radius: 60%;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  .range input{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1px;
+    background: #e4e4e4;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    z-index: 2222;
+  }
+  .left{
+      padding-top: 23px;
+  }
+  .right{
+      padding-top: 0;
+  }
+  .rank{
+    margin-bottom: 0!important;
+}
+input::-webkit-slider-thumb {
+    height: 9px;
+    width: 9px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #720303;
+    border-radius: 50%;
+    box-shadow: 5px 0 0 -4px #E4E4E4, 6px 0 0 -4px #E4E4E4, 7px 0 0 -4px #E4E4E4, 8px 0 0 -4px #E4E4E4, 9px 0 0 -4px #E4E4E4, 10px 0 0 -4px #E4E4E4, 11px 0 0 -4px #E4E4E4, 12px 0 0 -4px #E4E4E4, 13px 0 0 -4px #E4E4E4, 14px 0 0 -4px #E4E4E4, 15px 0 0 -4px #E4E4E4, 16px 0 0 -4px #E4E4E4, 17px 0 0 -4px #E4E4E4, 18px 0 0 -4px #E4E4E4, 19px 0 0 -4px #E4E4E4, 20px 0 0 -4px #E4E4E4, 21px 0 0 -4px #E4E4E4, 22px 0 0 -4px #E4E4E4, 23px 0 0 -4px #E4E4E4, 24px 0 0 -4px #E4E4E4, 25px 0 0 -4px #E4E4E4, 26px 0 0 -4px #E4E4E4, 27px 0 0 -4px #E4E4E4, 28px 0 0 -4px #E4E4E4, 29px 0 0 -4px #E4E4E4, 30px 0 0 -4px #E4E4E4, 31px 0 0 -4px #E4E4E4, 32px 0 0 -4px #E4E4E4, 33px 0 0 -4px #E4E4E4, 34px 0 0 -4px #E4E4E4, 35px 0 0 -4px #E4E4E4, 36px 0 0 -4px #E4E4E4, 37px 0 0 -4px #E4E4E4, 38px 0 0 -4px #E4E4E4, 39px 0 0 -4px #E4E4E4, 40px 0 0 -4px #E4E4E4, 41px 0 0 -4px #E4E4E4, 42px 0 0 -4px #E4E4E4, 43px 0 0 -4px #E4E4E4, 44px 0 0 -4px #E4E4E4, 45px 0 0 -4px #E4E4E4, 46px 0 0 -4px #E4E4E4, 47px 0 0 -4px #E4E4E4, 48px 0 0 -4px #E4E4E4, 49px 0 0 -4px #E4E4E4, 50px 0 0 -4px #E4E4E4, 51px 0 0 -4px #E4E4E4, 52px 0 0 -4px #E4E4E4, 53px 0 0 -4px #E4E4E4, 54px 0 0 -4px #E4E4E4, 55px 0 0 -4px #E4E4E4, 56px 0 0 -4px #E4E4E4, 57px 0 0 -4px #E4E4E4, 58px 0 0 -4px #E4E4E4, 59px 0 0 -4px #E4E4E4, 60px 0 0 -4px #E4E4E4, 61px 0 0 -4px #E4E4E4, 62px 0 0 -4px #E4E4E4, 63px 0 0 -4px #E4E4E4, 64px 0 0 -4px #E4E4E4, 65px 0 0 -4px #E4E4E4, 66px 0 0 -4px #E4E4E4, 67px 0 0 -4px #E4E4E4, 68px 0 0 -4px #E4E4E4, 69px 0 0 -4px #E4E4E4, 70px 0 0 -4px #E4E4E4, 71px 0 0 -4px #E4E4E4, 72px 0 0 -4px #E4E4E4, 73px 0 0 -4px #E4E4E4, 74px 0 0 -4px #E4E4E4, 75px 0 0 -4px #E4E4E4, 76px 0 0 -4px #E4E4E4, 77px 0 0 -4px #E4E4E4, 78px 0 0 -4px #E4E4E4, 79px 0 0 -4px #E4E4E4, 80px 0 0 -4px #E4E4E4, 81px 0 0 -4px #E4E4E4, 82px 0 0 -4px #E4E4E4, 83px 0 0 -4px #E4E4E4, 84px 0 0 -4px #E4E4E4, 85px 0 0 -4px #E4E4E4, 86px 0 0 -4px #E4E4E4, 87px 0 0 -4px #E4E4E4, 88px 0 0 -4px #E4E4E4, 89px 0 0 -4px #E4E4E4, 90px 0 0 -4px #E4E4E4, 91px 0 0 -4px #E4E4E4, 92px 0 0 -4px #E4E4E4, 93px 0 0 -4px #E4E4E4, 94px 0 0 -4px #E4E4E4, 95px 0 0 -4px #E4E4E4, 96px 0 0 -4px #E4E4E4, 97px 0 0 -4px #E4E4E4, 98px 0 0 -4px #E4E4E4, 99px 0 0 -4px #E4E4E4, 100px 0 0 -4px #E4E4E4, 101px 0 0 -4px #E4E4E4, 102px 0 0 -4px #E4E4E4, 103px 0 0 -4px #E4E4E4, 104px 0 0 -4px #E4E4E4, 105px 0 0 -4px #E4E4E4, 106px 0 0 -4px #E4E4E4, 107px 0 0 -4px #E4E4E4, 108px 0 0 -4px #E4E4E4, 109px 0 0 -4px #E4E4E4, 110px 0 0 -4px #E4E4E4, 111px 0 0 -4px #E4E4E4, 112px 0 0 -4px #E4E4E4, 113px 0 0 -4px #E4E4E4, 114px 0 0 -4px #E4E4E4, 115px 0 0 -4px #E4E4E4, 116px 0 0 -4px #E4E4E4, 117px 0 0 -4px #E4E4E4, 118px 0 0 -4px #E4E4E4, 119px 0 0 -4px #E4E4E4, 120px 0 0 -4px #E4E4E4, 121px 0 0 -4px #E4E4E4, 122px 0 0 -4px #E4E4E4, 123px 0 0 -4px #E4E4E4, 124px 0 0 -4px #E4E4E4, 125px 0 0 -4px #E4E4E4, 126px 0 0 -4px #E4E4E4, 127px 0 0 -4px #E4E4E4, 128px 0 0 -4px #E4E4E4, 129px 0 0 -4px #E4E4E4, 130px 0 0 -4px #E4E4E4, 131px 0 0 -4px #E4E4E4, 132px 0 0 -4px #E4E4E4, 133px 0 0 -4px #E4E4E4, 134px 0 0 -4px #E4E4E4, 135px 0 0 -4px #E4E4E4, 136px 0 0 -4px #E4E4E4, 137px 0 0 -4px #E4E4E4, 138px 0 0 -4px #E4E4E4, 139px 0 0 -4px #E4E4E4, 140px 0 0 -4px #E4E4E4, 141px 0 0 -4px #E4E4E4, 142px 0 0 -4px #E4E4E4, 143px 0 0 -4px #E4E4E4, 144px 0 0 -4px #E4E4E4, 145px 0 0 -4px #E4E4E4, 146px 0 0 -4px #E4E4E4, 147px 0 0 -4px #E4E4E4, 148px 0 0 -4px #E4E4E4, 149px 0 0 -4px #E4E4E4, 150px 0 0 -4px #E4E4E4, 151px 0 0 -4px #E4E4E4, 152px 0 0 -4px #E4E4E4, 153px 0 0 -4px #E4E4E4, 154px 0 0 -4px #E4E4E4, 155px 0 0 -4px #E4E4E4, 156px 0 0 -4px #E4E4E4, 157px 0 0 -4px #E4E4E4, 158px 0 0 -4px #E4E4E4, 159px 0 0 -4px #E4E4E4, 160px 0 0 -4px #E4E4E4, 161px 0 0 -4px #E4E4E4, 162px 0 0 -4px #E4E4E4, 163px 0 0 -4px #E4E4E4, 164px 0 0 -4px #E4E4E4, 165px 0 0 -4px #E4E4E4, 166px 0 0 -4px #E4E4E4, 167px 0 0 -4px #E4E4E4, 168px 0 0 -4px #E4E4E4, 169px 0 0 -4px #E4E4E4, 170px 0 0 -4px #E4E4E4;
+    margin-top: -4px;
+  }
+  input::-webkit-slider-runnable-track {
+    background: #9E2F2F;;
+    content: '';
+    height: 1px;
+    pointer-events: none;
+  }
+  input:focus {
+    box-shadow: none;
+    outline: none;
+  }
+  input {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    min-height: 1px;
+    overflow: hidden;
+    width: 170px;
+  }
+  .range input::-moz-range-thumb{
+    -webkit-appearance: none;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #720303;
+    cursor: pointer;
+  }
+  .range input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #720303;
+    cursor: pointer;
+  }
