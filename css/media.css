@@ -121,7 +121,7 @@
     .section_2 > h2, .section_3 > h2, .section_4 > h2, .section_5 > h2{
         font-size: 20px;
     }
-    .movie > .carousel-inner >.carousel-item > .row > .col-3 > .title{
+    .movie > .carousel-inner >.carousel-item > .row > .col-3 > a> .title{
         font-size: 12px;
         line-height: 10px;
     }
@@ -407,7 +407,7 @@
     .section_2 > h2, .section_3 > h2, .section_4 > h2, .section_5 > h2{
         font-size: 22px;
     }
-    .movie > .carousel-inner >.carousel-item > .row > .col-3 > .title{
+    .movie > .carousel-inner >.carousel-item > .row > .col-3 > a > .title{
         font-size: 12px;
         line-height: 10px;
     }
@@ -692,7 +692,7 @@
     .section_2 > h2, .section_3 > h2, .section_4 > h2, .section_5 > h2{
         font-size: 24px;
     }
-    .movie > .carousel-inner >.carousel-item > .row > .col-3 > .title{
+    .movie > .carousel-inner >.carousel-item > .row > .col-3 > a > .title{
         font-size: 14px;
         line-height: 10px;
     }
@@ -977,7 +977,7 @@
     .section_2 > h2, .section_3 > h2, .section_4 > h2, .section_5 > h2{
         font-size: 24px;
     }
-    .movie > .carousel-inner >.carousel-item > .row > .col-3 > .title{
+    .movie > .carousel-inner >.carousel-item > .row > .col-3 > a > .title{
         font-size: 12px;
         line-height: 10px;
     }
@@ -1266,7 +1266,7 @@
     .section_2 > h2, .section_3 > h2, .section_4 > h2, .section_5 > h2{
         font-size: 26px;
     }
-    .movie > .carousel-inner >.carousel-item > .row > .col-3 > .title{
+    .movie > .carousel-inner >.carousel-item > .row > .col-3 > a > .title{
         font-size: 14px;
         line-height: 10px;
     }
@@ -1565,7 +1565,7 @@
     .section_2 > h2, .section_3 > h2, .section_4 > h2, .section_5 > h2{
         font-size: 26px;
     }
-    .movie > .carousel-inner >.carousel-item > .row > .col-3 > .title{
+    .movie > .carousel-inner >.carousel-item > .row > .col-3 >  a > .title{
         font-size: 14px;
         line-height: 10px;
     }
@@ -1845,7 +1845,7 @@
     .section_2 > h2, .section_3 > h2, .section_4 > h2, .section_5 > h2{
         font-size: 26px;
     }
-    .movie > .carousel-inner >.carousel-item > .row > .col-3 > .title{
+    .movie > .carousel-inner >.carousel-item > .row > .col-3 > a > .title{
         font-size: 18px;
         line-height: 12px;
     }
