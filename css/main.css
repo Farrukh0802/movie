@@ -17,6 +17,9 @@
 *{
     box-sizing: border-box;
 }
+a:hover{
+    text-decoration: none;
+}
 .navbar-dark{
     padding-top: 0;
 }
@@ -133,6 +136,9 @@
     font-size: 18px;
     color: #fff!important;
     line-height: 21px;
+}
+.close{
+    cursor: pointer;
 }
 .active1 > .col-7 > .main-1{
     font-size: 110px;
@@ -375,13 +381,14 @@
     width: 100%;
     cursor: pointer;
 }
-.movie > .carousel-inner >.carousel-item > .row > .col-3 > .title{
+.movie > .carousel-inner >.carousel-item > .row > .col-3 > a > .title{
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
     color: #E4E4E4;
+    text-decoration: none;
     text-transform: uppercase;
     margin-top: 18px;
     cursor: pointer;
